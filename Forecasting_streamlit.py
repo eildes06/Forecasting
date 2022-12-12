@@ -10,7 +10,7 @@ def get_base64(bin_file):
         data = f.read()
     return base64.b64encode(data).decode()
 
-model = pickle.load(open("Forcasting1.pkl", "rb"))
+model = pickle.load(open("Forcasting1.pkl", "wb"))
 dtf = pd.read_excel('Veri-Seti.xlsx', index_col='Date',parse_dates=True)
                 
 image = Image.open('car.jpg')
