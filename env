@@ -1,0 +1,26 @@
+! pip install statsmodels==0.12.2
+
+import numpy as np
+import pandas as pd
+
+import matplotlib.pyplot as plt
+import plotly.express as px
+import seaborn as sns
+
+import itertools
+import statsmodels.api as sm
+plt.style.use('fivethirtyeight')
+
+import warnings
+warnings.filterwarnings("ignore")
+warnings.warn("this will not show")
+
+plt.rcParams["figure.figsize"] = (10,6)
+
+sns.set_style("whitegrid")
+pd.set_option('display.float_format', lambda x: '%.3f' % x)
+
+
+pd.set_option('display.max_columns', None)
+
+from statsmodels.tsa.ar_model import AutoReg
