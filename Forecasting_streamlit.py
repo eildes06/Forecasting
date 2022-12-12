@@ -4,6 +4,8 @@ import pandas as pd
 import pickle
 from PIL import Image
 import base64
+from statsmodels.tsa.arima_model import ARIMA
+from statsmodels.tsa.arima_model import ARIMAResults
 
 def get_base64(bin_file):
     with open(bin_file, 'rb') as f:
