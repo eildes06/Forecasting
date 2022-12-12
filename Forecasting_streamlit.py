@@ -3,8 +3,12 @@ import numpy as np
 import pandas as pd
 import pickle
 from PIL import Image
+import base64
 
-
+def get_base64(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
 
 model = pickle.load(open("Forcasting.pkl", "wb"))
 dtf = pd.read_excel('Veri-Seti.xlsx', index_col='Date',parse_dates=True)
