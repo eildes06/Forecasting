@@ -6,8 +6,11 @@ from PIL import Image
 
 
 
-model = pickle.load(open("XGBClassifier.pkl", "rb"))
-df = pd.read_csv("HR_Dataset.csv")
+model = pickle.load(open("Forcasting.pkl", "wb")
+dtf = pd.read_excel('Veri-Seti.xlsx',
+                 index_col='Date',
+                 parse_dates=True
+                )
 image = Image.open('leave.jpg')
 html_temp = """
 <div style="background-color:Blue;padding:10px">
