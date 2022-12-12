@@ -5,7 +5,7 @@ import pickle
 from PIL import Image
 import base64
 
-! pip install statsmodels==0.12.2
+pip install statsmodels==0.12.2
 from statsmodels.tsa.arima_model import ARIMA
 from statsmodels.tsa.arima_model import ARIMAResults
 
