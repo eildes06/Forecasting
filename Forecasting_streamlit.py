@@ -24,13 +24,13 @@ st.markdown('***')
 
 OTV_Orani = st.sidebar.slider(label="OTV Orani", min_value=0.0, max_value=1.0, step=0.01)
 Faiz = st.sidebar.slider(label="Faiz", min_value=0.0, max_value=1.0, step=0.01)
-EUR/TL = st.sidebar.slider(label="EUR/TL", min_value=0, max_value=10, step=1)
+EUR_TL = st.sidebar.slider(label="EUR/TL", min_value=0, max_value=10, step=1)
 Kredi_Stok = st.sidebar.slider(label="Kredi Stok", min_value=0, max_value=350, step=10)
 
 
 churn = pd.DataFrame({"OTV Orani" : [OTV_Orani],
                     "Faiz" : [Faiz],
-                    "EUR/TL" : [EUR/TL],
+                    "EUR/TL" : [EUR_TL],
                     "Kredi Stok" : [Kredi_Stok]
                
                     })
