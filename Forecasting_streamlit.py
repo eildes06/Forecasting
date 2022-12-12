@@ -6,10 +6,10 @@ from PIL import Image
 
 
 
-model = pickle.load(open("Forcasting.pkl", "wb")
-#dtf = pd.read_excel('Veri-Seti.xlsx', index_col='Date',parse_dates=True)
+model = pickle.load(open("Forcasting.pkl", "wb"))
+dtf = pd.read_excel('Veri-Seti.xlsx', index_col='Date',parse_dates=True)
                 
-#image = Image.open('car.jpg')
+image = Image.open('car.jpg')
 html_temp = """
 <div style="background-color:Blue;padding:10px">
 <h2 style="color:white;text-align:center;">Employee Churn Prediction - GROUP-9 </h2>
